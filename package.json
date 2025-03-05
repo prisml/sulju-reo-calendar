@@ -6,7 +6,8 @@
     "scripts": {
         "dev": "pnpm run --parallel -r dev",
         "build": "pnpm run --parallel -r build",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "postinstall": "pnpm --filter ./api install && pnpm --filter ./web install"
     },
     "keywords": [],
     "author": "",
