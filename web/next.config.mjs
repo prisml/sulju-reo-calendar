@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // 여기에 설정을 추가하세요
+    reactStrictMode: true,
+    images: {
+        domains: ['image.tmdb.org', 'rb.gy'],
+    },
 };
 
 export default nextConfig;
